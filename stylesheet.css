@@ -1,0 +1,138 @@
+/* Copyright (C) 2023 IT-Wizzard. Alle rechten voorbehouden */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f1f1f1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-image: url("https://mijn.it-wizzard.nl/assets/img/background.jpg");
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffffeb;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="number"],
+input[type="text"],
+select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-top-right-radius: 5px;
+    font-size: 20px;
+    /*! padding-left: 24px; */
+    position: relative;
+    border-style: hidden;
+    border-bottom-right-radius: 5px;
+}
+
+input[type="number"]::before,
+input[type="text"]::before,
+select::before {
+    content: "\20AC";
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.copy-button {
+    display: inline-block;
+    padding: 8px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    margin-left: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.copy-button .copy-icon,
+.copy-button .checkmark {
+    font-size: 16px;
+}
+
+.copy-button .checkmark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #333;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#btwPercentage {
+    background: white;
+}
+
+.copy-button.checked .copy-icon {
+    opacity: 0;
+}
+
+.copy-button.checked .checkmark {
+    opacity: 1;
+    background: #53cd00;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.copy-button.unchecked {
+    background: #000;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    max-width: 300px;
+}
+
+#btwPercentage {
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.euro-sign {
+    padding: 5.3px 10px;
+    color: white;
+    font-size: 20px;
+    background: #ff3000;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
