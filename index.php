@@ -14,7 +14,7 @@
 <body>
     <div class="container">
         <div class="logo">
-            <img src="/images/logo-big.png" alt="Logo">
+            <img src="logo.png" alt="Logo">
         </div>
         <h1>Btw berekenen</h1>
 
